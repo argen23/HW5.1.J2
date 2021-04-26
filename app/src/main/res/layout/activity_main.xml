@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/photo_one"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/tree_id1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tree_photo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="40sp"
+        />
+
+    <TextView
+        android:id="@+id/text_ones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tree_id1"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:text="SFPO"
+        android:textColor="@color/teal_700"
+        />
+
+<EditText
+    android:id="@+id/edit_text_sfpo"
+    android:layout_width="320sp"
+    android:layout_height="40sp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/SFPO_id"
+    android:layout_marginTop="10dp"
+    android:hint="email"
+    android:textAlignment="center"
+    android:textColorHint="@color/black"
+    android:background="@color/white"
+    android:textColor="@color/black"
+    />
+
+    <EditText
+        android:layout_width="320sp"
+        android:layout_height="40sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_sfpo"
+        android:layout_marginTop="10dp"
+        android:hint="name"
+        android:textAlignment="center"
+        android:textColorHint="@color/black"
+        android:background="@color/white"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/SFPO_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_ones"
+        android:textColor="@color/white"
+        android:text="SPECIAL FOREST PROTECTION ORGANIZATION"
+        android:textSize="25dp"
+        android:textStyle="italic"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="170sp"
+        android:text="Registration"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/white"
+        android:background="@color/cardview_shadow_start_color"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
